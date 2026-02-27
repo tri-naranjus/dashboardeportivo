@@ -1,0 +1,104 @@
+'use client';
+
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import {
+  LayoutDashboard,
+  Calendar,
+  Activity,
+  BookOpen,
+  Settings,
+  Dumbbell,
+} from 'lucide-react';
+import { cn } from '@/lib/utils';
+
+const navItems = [
+  {
+    label: 'Dashboard',
+    href: '/dashboard',
+    icon: LayoutDashboard,
+  },
+  {
+    label: 'Planificación',
+    href: '/planning',
+    icon: Calendar,
+  },
+  {
+    label: 'Strava',
+    href: '/strava',
+    icon: Activity,
+  },
+  {
+    label: 'Conocimiento',
+    href: '/knowledge',
+    icon: BookOpen,
+  },
+  {
+    label: 'Configuración',
+    href: '/settings',
+    icon: Settings,
+  },
+];
+
+export function Sidebar() {
+  const pathname = usePathname();
+
+  return (
+    <>
+      {/* Desktop sidebar */}
+      <aside className="hidden md:flex md:w-64 md:flex-col md:border-r md:border-border md:bg-card">
+        <div className="flex h-16 items-center gap-2 border-b border-border px-6">
+          <Dumbbell className="h-6 w-6 text-primary" />
+          <span className="text-xl font-bold">DeporteIA</span>
+        </div>
+        <nav className="flex-1 space-y-1 p-4">
+          {navItems.map((item) => {
+            const isActive = pathname === item.href;
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={cn(
+                  'flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors',
+                  isActive
+                    ? 'bg-primary text-primary-foreground'
+                    : 'text-muted-foreground hover:bg-accent hover:text-accent-foreground'
+                )}
+              >
+                <item.icon className="h-4 w-4" />
+                {item.label}
+              </Link>
+            );
+          })}
+        </nav>
+        <div className="border-t border-border p-4">
+          <p className="text-xs text-muted-foreground">
+            Zona 2 · Lactate Shuttle · Periodización
+          </p>
+        </div>
+      </aside>
+
+      {/* Mobile bottom nav */}
+      <nav className="fixed bottom-0 left-0 right-0 z-50 flex border-t border-border bg-card md:hidden">
+        {navItems.map((item) => {
+          const isActive = pathname === item.href;
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={cn(
+                'flex flex-1 flex-col items-center gap-1 py-2 text-xs',
+                isActive
+                  ? 'text-primary'
+                  : 'text-muted-foreground'
+              )}
+            >
+              <item.icon className="h-5 w-5" />
+              <span className="truncate">{item.label}</span>
+            </Link>
+          );
+        })}
+      </nav>
+    </>
+  );
+}

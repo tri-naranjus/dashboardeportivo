@@ -1,6 +1,5 @@
 import { UserProfile, FitnessMetrics } from '@/types/fitness';
 import { WeeklyPlan, DayTrainingPlan, DayStrengthPlan } from '@/types/planning';
-import { KnowledgeDocument } from '@/types/knowledge';
 import { getNutritionForSession } from './nutritionRecommendation';
 
 /**
@@ -199,7 +198,7 @@ function buildTrainingDay(
  */
 function buildStrengthSession(
   dayOfWeek: string,
-  sportFocus: UserProfile['sportFocus']
+  _sportFocus: UserProfile['sportFocus']
 ): DayStrengthPlan {
   const baseExercises = [
     {

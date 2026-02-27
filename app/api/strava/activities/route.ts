@@ -1,11 +1,11 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 import { getValidAccessToken } from '@/lib/strava/auth';
 import { fetchActivitiesFromStrava } from '@/lib/strava/client';
 import { transformStravaActivity } from '@/lib/strava/transform';
 import { saveActivities } from '@/lib/storage/activities';
 import { getUserProfile } from '@/lib/storage/userProfile';
 
-export async function GET(request: NextRequest) {
+export async function GET() {
   try {
     // Get valid access token
     const accessToken = await getValidAccessToken();
