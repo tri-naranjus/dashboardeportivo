@@ -15,6 +15,7 @@ import {
 } from '@/components/ui/select';
 import { Separator } from '@/components/ui/separator';
 import { Settings, Save, User } from 'lucide-react';
+import { IntervalsIcuConnect } from '@/components/settings/IntervalsIcuConnect';
 
 const DEFAULT_PROFILE: UserProfile = {
   ftp: 250,
@@ -30,9 +31,11 @@ export default function SettingsPage() {
   const [profile, setProfile] = useState<UserProfile>(DEFAULT_PROFILE);
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [intervalsIcuConnected, setIntervalsIcuConnected] = useState(false);
 
   useEffect(() => {
-    async function loadProfile() {
+    async function loadData() {
+      // Load profile
       try {
         const res = await fetch('/api/profile');
         if (res.ok) {
@@ -42,8 +45,19 @@ export default function SettingsPage() {
       } catch {
         // Use defaults
       }
+
+      // Check Intervals.icu connection (optional - if endpoint exists)
+      try {
+        const res = await fetch('/api/intervals/status');
+        if (res.ok) {
+          const data = await res.json();
+          setIntervalsIcuConnected(data.connected);
+        }
+      } catch {
+        // Endpoint might not exist yet
+      }
     }
-    loadProfile();
+    loadData();
   }, []);
 
   async function handleSave() {
@@ -221,6 +235,12 @@ export default function SettingsPage() {
           </p>
         </CardContent>
       </Card>
+
+      {/* Intervals.icu Connection */}
+      <IntervalsIcuConnect
+        isConnected={intervalsIcuConnected}
+        onConnect={() => setIntervalsIcuConnected(!intervalsIcuConnected)}
+      />
 
       {/* AI API Key placeholder */}
       <Card>
