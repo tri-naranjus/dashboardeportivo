@@ -13,8 +13,8 @@ export async function GET() {
     // Get user profile for FTP/LTHR
     const profile = await getUserProfile();
 
-    // Fetch from Strava (last 28 days)
-    const stravaActivities = await fetchActivitiesFromStrava(accessToken, 28);
+    // Fetch from Strava (last 6 months = 180 days)
+    const stravaActivities = await fetchActivitiesFromStrava(accessToken, 180);
 
     // Transform to internal format with TSS calculations
     const activities = stravaActivities.map((a) =>

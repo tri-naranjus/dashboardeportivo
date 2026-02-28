@@ -1,17 +1,19 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { FitnessMetrics } from '@/types/fitness';
+import { FitnessMetrics, ActivityData } from '@/types/fitness';
 import { computeFitnessMetrics } from '@/lib/fitness/ctl-atl';
 import { FitnessMetricsCard } from '@/components/dashboard/FitnessMetricsCard';
 import { TrainingStatusBadge } from '@/components/dashboard/TrainingStatusBadge';
 import { TodayRecommendation } from '@/components/dashboard/TodayRecommendation';
 import { WeeklyLoadChart } from '@/components/dashboard/WeeklyLoadChart';
 import { CTLATLChart } from '@/components/dashboard/CTLATLChart';
+import { RecentWorkouts } from '@/components/dashboard/RecentWorkouts';
 import { Skeleton } from '@/components/ui/skeleton';
 
 export default function DashboardPage() {
   const [metrics, setMetrics] = useState<FitnessMetrics | null>(null);
+  const [activities, setActivities] = useState<ActivityData[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -19,19 +21,21 @@ export default function DashboardPage() {
       try {
         // Try to fetch activities from API
         const res = await fetch('/api/strava/activities');
-        let activities = [];
+        let fetchedActivities: ActivityData[] = [];
 
         if (res.ok) {
           const data = await res.json();
-          activities = data.activities || [];
+          fetchedActivities = data.activities || [];
         }
 
-        // Compute fitness metrics (works with empty array too)
-        const computed = computeFitnessMetrics(activities, 90);
+        setActivities(fetchedActivities);
+
+        // Compute fitness metrics over 180 days for full history
+        const computed = computeFitnessMetrics(fetchedActivities, 180);
         setMetrics(computed);
       } catch {
         // Default empty metrics
-        setMetrics(computeFitnessMetrics([], 90));
+        setMetrics(computeFitnessMetrics([], 180));
       } finally {
         setLoading(false);
       }
@@ -76,6 +80,9 @@ export default function DashboardPage() {
 
       {/* Today's Recommendation */}
       <TodayRecommendation tsb={tsb} weight={65} tdee={2200} />
+
+      {/* Recent Workouts */}
+      <RecentWorkouts activities={activities} />
 
       {/* Charts */}
       <div className="grid gap-4 lg:grid-cols-2">

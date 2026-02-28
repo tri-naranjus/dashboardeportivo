@@ -13,6 +13,7 @@ export function getNutritionForSession(
   const dayOfWeek = '';
 
   switch (sessionType) {
+    case 'Intervals':
     case 'VO2max':
     case 'Threshold':
       // High intensity: Train High

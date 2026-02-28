@@ -1,6 +1,9 @@
+export type SportType = 'cycling' | 'running' | 'trail' | 'swimming' | 'calisthenics';
+
 export interface DayTrainingPlan {
-  dayOfWeek: string; // "Monday" etc.
+  dayOfWeek: string;
   date: string;
+  sport: SportType | 'rest';
   sessionType:
     | 'Rest'
     | 'Zone2'
@@ -8,44 +11,61 @@ export interface DayTrainingPlan {
     | 'VO2max'
     | 'LongRide'
     | 'Strength'
-    | 'Race';
+    | 'Race'
+    | 'Intervals';
+  description: string; // "Series 10K: 5x1km", "Zona 2 ciclismo", etc.
   durationMinutes: number;
-  intensityZones: string; // e.g. "70% Zone 2, 30% Zone 3"
-  physiologicalObjective: string; // e.g. "Mitochondrial adaptation, fat oxidation"
+  intensityZones: string;
+  physiologicalObjective: string;
   perceivedLoad: 'Low' | 'Moderate' | 'High' | 'Very High';
   tssEstimate: number;
+  isFixed?: boolean; // true = can't be removed (e.g. Thursday calisthenics)
 }
 
 export interface DayNutritionPlan {
   dayOfWeek: string;
   choStrategy: 'Train Low' | 'Train High' | 'Race Protocol' | 'Recovery';
-  preworkoutCHO: string; // e.g. "1.5g/kg CHO 2h before"
-  duringCHO: string; // e.g. "60-90g CHO/hr (glucose:fructose 2:1)"
+  preworkoutCHO: string;
+  duringCHO: string;
   postworkoutCHO: string;
-  dailyProtein: string; // e.g. "2.0g/kg"
-  dailyCalories: string; // e.g. "TDEE + 300 kcal"
+  dailyProtein: string;
+  dailyCalories: string;
   hydration: string;
-  scientificBasis: string; // Reference to Brooks/San Millán/Viribay
+  scientificBasis: string;
 }
 
 export interface DayStrengthPlan {
   dayOfWeek: string;
   exercises: Array<{
-    name: string; // e.g. "Tibialis raises"
+    name: string;
     sets: number;
-    reps: string; // e.g. "15 each leg"
+    reps: string;
     notes: string;
   }>;
+}
+
+export interface DayPlan {
+  training: DayTrainingPlan;
+  secondTraining?: DayTrainingPlan;
+  nutrition: DayNutritionPlan;
+  strength?: DayStrengthPlan;
 }
 
 export interface WeeklyPlan {
   weekStartDate: string;
   weekObjective: string;
   fitnessSnapshot: { ctl: number; atl: number; tsb: number };
-  days: Array<{
-    training: DayTrainingPlan;
-    nutrition: DayNutritionPlan;
-    strength?: DayStrengthPlan;
-  }>;
+  days: DayPlan[];
   generatedAt: string;
+}
+
+// Available session options for the edit dialog
+export interface SessionTemplate {
+  sport: SportType;
+  sessionType: DayTrainingPlan['sessionType'];
+  label: string;
+  description: string;
+  emoji: string;
+  defaultDuration: number;
+  defaultTSS: number;
 }

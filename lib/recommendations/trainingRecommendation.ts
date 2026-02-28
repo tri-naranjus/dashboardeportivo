@@ -130,6 +130,13 @@ export function getSessionTypeDetails(sessionType: DayTrainingPlan['sessionType'
       physiologicalObjective: 'Especificidad de carrera, metabolismo mixto',
       perceivedLoad: 'Very High',
     },
+    Intervals: {
+      description: 'Series de velocidad (10K)',
+      durationMinutes: 60,
+      intensityZones: '5x1km Z4-Z5, rec 2min',
+      physiologicalObjective: 'Velocidad especifica, economia de carrera',
+      perceivedLoad: 'High',
+    },
   };
 
   return details[sessionType] || {};

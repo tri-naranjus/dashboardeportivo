@@ -36,10 +36,10 @@ export async function addActivity(activity: ActivityData): Promise<void> {
     (a) => a.stravaId !== activity.stravaId
   );
   filtered.push(activity);
-  // Keep only last 90 days
-  const ninetyDaysAgo = new Date();
-  ninetyDaysAgo.setDate(ninetyDaysAgo.getDate() - 90);
-  const recent = filtered.filter((a) => new Date(a.date) >= ninetyDaysAgo);
+  // Keep only last 6 months (180 days)
+  const sixMonthsAgo = new Date();
+  sixMonthsAgo.setDate(sixMonthsAgo.getDate() - 180);
+  const recent = filtered.filter((a) => new Date(a.date) >= sixMonthsAgo);
   await saveActivities(recent);
 }
 

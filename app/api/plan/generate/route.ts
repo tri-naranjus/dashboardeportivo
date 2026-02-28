@@ -7,7 +7,7 @@ import { getUserProfile } from '@/lib/storage/userProfile';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { weekObjective } = body;
+    const { weekObjective, restDayOfWeek } = body;
 
     if (!weekObjective) {
       return NextResponse.json(
@@ -23,8 +23,13 @@ export async function POST(request: NextRequest) {
     // Compute fitness metrics
     const fitnessMetrics = computeFitnessMetrics(activities);
 
-    // Generate plan
-    const plan = generateWeeklyPlan(fitnessMetrics, profile, weekObjective);
+    // Generate plan with optional rest day override
+    const plan = generateWeeklyPlan(
+      fitnessMetrics,
+      profile,
+      weekObjective,
+      restDayOfWeek
+    );
 
     return NextResponse.json(plan);
   } catch (error) {

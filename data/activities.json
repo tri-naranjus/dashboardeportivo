@@ -1,0 +1,2267 @@
+[
+  {
+    "id": "strava-17548749017",
+    "stravaId": 17548749017,
+    "date": "2026-02-27",
+    "type": "Swim",
+    "durationSeconds": 2026,
+    "distanceMeters": 2100,
+    "averageHeartRate": 101,
+    "tss": 12.1,
+    "intensityFactor": 0.464,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17521238373",
+    "stravaId": 17521238373,
+    "date": "2026-02-25",
+    "type": "GravelRide",
+    "durationSeconds": 6614,
+    "distanceMeters": 40142,
+    "averagePower": 161,
+    "averageHeartRate": 117.9,
+    "normalizedPower": 161,
+    "tss": 76.2,
+    "intensityFactor": 0.644,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17521327163",
+    "stravaId": 17521327163,
+    "date": "2026-02-24",
+    "type": "TrailRun",
+    "durationSeconds": 4904,
+    "distanceMeters": 9579,
+    "averagePower": 179,
+    "averageHeartRate": 138.3,
+    "normalizedPower": 179,
+    "tss": 69.8,
+    "intensityFactor": 0.716,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17490755730",
+    "stravaId": 17490755730,
+    "date": "2026-02-22",
+    "type": "GravelRide",
+    "durationSeconds": 7842,
+    "distanceMeters": 47634,
+    "averagePower": 164,
+    "normalizedPower": 164,
+    "tss": 93.7,
+    "intensityFactor": 0.656,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17474538368",
+    "stravaId": 17474538368,
+    "date": "2026-02-21",
+    "type": "GravelRide",
+    "durationSeconds": 24883,
+    "distanceMeters": 144273,
+    "averagePower": 151,
+    "normalizedPower": 151,
+    "tss": 252.2,
+    "intensityFactor": 0.604,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17479446109",
+    "stravaId": 17479446109,
+    "date": "2026-02-18",
+    "type": "Swim",
+    "durationSeconds": 2262,
+    "distanceMeters": 2050,
+    "averageHeartRate": 93.7,
+    "tss": 9.9,
+    "intensityFactor": 0.397,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17474524882",
+    "stravaId": 17474524882,
+    "date": "2026-02-17",
+    "type": "GravelRide",
+    "durationSeconds": 8668,
+    "distanceMeters": 49851,
+    "tss": 101.7,
+    "intensityFactor": 0.65,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17479446143",
+    "stravaId": 17479446143,
+    "date": "2026-02-16",
+    "type": "Run",
+    "durationSeconds": 2779,
+    "distanceMeters": 8643,
+    "averagePower": 233,
+    "averageHeartRate": 143.7,
+    "normalizedPower": 233,
+    "tss": 67.1,
+    "intensityFactor": 0.932,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17474525014",
+    "stravaId": 17474525014,
+    "date": "2026-02-15",
+    "type": "GravelRide",
+    "durationSeconds": 11296,
+    "distanceMeters": 66013,
+    "tss": 132.6,
+    "intensityFactor": 0.65,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17474518410",
+    "stravaId": 17474518410,
+    "date": "2026-02-14",
+    "type": "Ride",
+    "durationSeconds": 4744,
+    "distanceMeters": 41969,
+    "averagePower": 189,
+    "normalizedPower": 189,
+    "tss": 75.3,
+    "intensityFactor": 0.756,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17479446108",
+    "stravaId": 17479446108,
+    "date": "2026-02-11",
+    "type": "Swim",
+    "durationSeconds": 1870,
+    "distanceMeters": 2000,
+    "averageHeartRate": 99.5,
+    "tss": 10.5,
+    "intensityFactor": 0.45,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17356175352",
+    "stravaId": 17356175352,
+    "date": "2026-02-10",
+    "type": "Run",
+    "durationSeconds": 3151,
+    "distanceMeters": 9476,
+    "averagePower": 224,
+    "averageHeartRate": 146.3,
+    "normalizedPower": 224,
+    "tss": 70.3,
+    "intensityFactor": 0.896,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17329022835",
+    "stravaId": 17329022835,
+    "date": "2026-02-08",
+    "type": "Run",
+    "durationSeconds": 2815,
+    "distanceMeters": 10018,
+    "averagePower": 266,
+    "averageHeartRate": 157.9,
+    "normalizedPower": 266,
+    "tss": 88.5,
+    "intensityFactor": 1.064,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17474518560",
+    "stravaId": 17474518560,
+    "date": "2026-02-04",
+    "type": "Ride",
+    "durationSeconds": 21586,
+    "distanceMeters": 41067,
+    "averagePower": 114,
+    "normalizedPower": 114,
+    "tss": 124.7,
+    "intensityFactor": 0.456,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17250262108",
+    "stravaId": 17250262108,
+    "date": "2026-02-01",
+    "type": "GravelRide",
+    "durationSeconds": 249,
+    "distanceMeters": 1337,
+    "tss": 2.9,
+    "intensityFactor": 0.65,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17239022639",
+    "stravaId": 17239022639,
+    "date": "2026-01-31",
+    "type": "Run",
+    "durationSeconds": 3439,
+    "distanceMeters": 10472,
+    "averageHeartRate": 153.6,
+    "tss": 84.7,
+    "intensityFactor": 0.942,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17329022708",
+    "stravaId": 17329022708,
+    "date": "2026-01-30",
+    "type": "Swim",
+    "durationSeconds": 817,
+    "distanceMeters": 850,
+    "averageHeartRate": 103.7,
+    "tss": 5.4,
+    "intensityFactor": 0.488,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17329022944",
+    "stravaId": 17329022944,
+    "date": "2026-01-30",
+    "type": "TrailRun",
+    "durationSeconds": 4523,
+    "distanceMeters": 10059,
+    "averagePower": 201,
+    "averageHeartRate": 145.3,
+    "normalizedPower": 201,
+    "tss": 81.2,
+    "intensityFactor": 0.804,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17210875635",
+    "stravaId": 17210875635,
+    "date": "2026-01-28",
+    "type": "Swim",
+    "durationSeconds": 1780,
+    "distanceMeters": 1900,
+    "averageHeartRate": 110.1,
+    "tss": 14.8,
+    "intensityFactor": 0.546,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17210875633",
+    "stravaId": 17210875633,
+    "date": "2026-01-26",
+    "type": "Swim",
+    "durationSeconds": 1680,
+    "distanceMeters": 1700,
+    "averageHeartRate": 109.3,
+    "tss": 13.6,
+    "intensityFactor": 0.539,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17210875702",
+    "stravaId": 17210875702,
+    "date": "2026-01-25",
+    "type": "Run",
+    "durationSeconds": 3565,
+    "distanceMeters": 10955,
+    "averagePower": 233,
+    "averageHeartRate": 151.1,
+    "normalizedPower": 233,
+    "tss": 86,
+    "intensityFactor": 0.932,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17247103574",
+    "stravaId": 17247103574,
+    "date": "2026-01-24",
+    "type": "GravelRide",
+    "durationSeconds": 10106,
+    "distanceMeters": 61054,
+    "tss": 118.6,
+    "intensityFactor": 0.65,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17247103720",
+    "stravaId": 17247103720,
+    "date": "2026-01-23",
+    "type": "GravelRide",
+    "durationSeconds": 8038,
+    "distanceMeters": 47581,
+    "averagePower": 205,
+    "normalizedPower": 205,
+    "tss": 150.1,
+    "intensityFactor": 0.82,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17247094577",
+    "stravaId": 17247094577,
+    "date": "2026-01-18",
+    "type": "GravelRide",
+    "durationSeconds": 8255,
+    "distanceMeters": 49721,
+    "averagePower": 188,
+    "normalizedPower": 188,
+    "tss": 129.7,
+    "intensityFactor": 0.752,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17210875875",
+    "stravaId": 17210875875,
+    "date": "2026-01-15",
+    "type": "TrailRun",
+    "durationSeconds": 10028,
+    "distanceMeters": 9725,
+    "averagePower": 149,
+    "averageHeartRate": 127.2,
+    "normalizedPower": 149,
+    "tss": 98.9,
+    "intensityFactor": 0.596,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17210875750",
+    "stravaId": 17210875750,
+    "date": "2026-01-12",
+    "type": "Run",
+    "durationSeconds": 3603,
+    "distanceMeters": 10584,
+    "averagePower": 185,
+    "averageHeartRate": 139.5,
+    "normalizedPower": 185,
+    "tss": 54.8,
+    "intensityFactor": 0.74,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17247095130",
+    "stravaId": 17247095130,
+    "date": "2026-01-11",
+    "type": "GravelRide",
+    "durationSeconds": 10625,
+    "distanceMeters": 62981,
+    "averagePower": 169,
+    "normalizedPower": 169,
+    "tss": 134.9,
+    "intensityFactor": 0.676,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17247086330",
+    "stravaId": 17247086330,
+    "date": "2026-01-10",
+    "type": "GravelRide",
+    "durationSeconds": 7998,
+    "distanceMeters": 47208,
+    "averagePower": 172,
+    "normalizedPower": 172,
+    "tss": 105.2,
+    "intensityFactor": 0.688,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17210875647",
+    "stravaId": 17210875647,
+    "date": "2026-01-09",
+    "type": "Swim",
+    "durationSeconds": 2410,
+    "distanceMeters": 2500,
+    "averageHeartRate": 103.5,
+    "tss": 15.8,
+    "intensityFactor": 0.486,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17210875657",
+    "stravaId": 17210875657,
+    "date": "2026-01-07",
+    "type": "Swim",
+    "durationSeconds": 2798,
+    "distanceMeters": 2950,
+    "averageHeartRate": 111,
+    "tss": 23.9,
+    "intensityFactor": 0.555,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16970267547",
+    "stravaId": 16970267547,
+    "date": "2026-01-07",
+    "type": "Ride",
+    "durationSeconds": 2971,
+    "distanceMeters": 0,
+    "tss": 34.9,
+    "intensityFactor": 0.65,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17210875681",
+    "stravaId": 17210875681,
+    "date": "2026-01-03",
+    "type": "Run",
+    "durationSeconds": 2567,
+    "distanceMeters": 8078,
+    "averagePower": 236,
+    "averageHeartRate": 153,
+    "normalizedPower": 236,
+    "tss": 63.5,
+    "intensityFactor": 0.944,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17210875740",
+    "stravaId": 17210875740,
+    "date": "2025-12-30",
+    "type": "Run",
+    "durationSeconds": 1547,
+    "distanceMeters": 7050,
+    "averagePower": 629,
+    "averageHeartRate": 66.3,
+    "normalizedPower": 629,
+    "tss": 272,
+    "intensityFactor": 2.516,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17210875631",
+    "stravaId": 17210875631,
+    "date": "2025-12-29",
+    "type": "Swim",
+    "durationSeconds": 1084,
+    "distanceMeters": 1000,
+    "averageHeartRate": 100.6,
+    "tss": 6.4,
+    "intensityFactor": 0.46,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17210875760",
+    "stravaId": 17210875760,
+    "date": "2025-12-28",
+    "type": "Run",
+    "durationSeconds": 2719,
+    "distanceMeters": 8399,
+    "averagePower": 240,
+    "averageHeartRate": 146.7,
+    "normalizedPower": 240,
+    "tss": 69.6,
+    "intensityFactor": 0.96,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16853082201",
+    "stravaId": 16853082201,
+    "date": "2025-12-27",
+    "type": "Ride",
+    "durationSeconds": 12015,
+    "distanceMeters": 91591,
+    "averageHeartRate": 131.1,
+    "tss": 181.4,
+    "intensityFactor": 0.737,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16836322211",
+    "stravaId": 16836322211,
+    "date": "2025-12-25",
+    "type": "Run",
+    "durationSeconds": 3245,
+    "distanceMeters": 10282,
+    "averagePower": 238,
+    "averageHeartRate": 148.7,
+    "normalizedPower": 238,
+    "tss": 81.7,
+    "intensityFactor": 0.952,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16829121232",
+    "stravaId": 16829121232,
+    "date": "2025-12-24",
+    "type": "GravelRide",
+    "durationSeconds": 9798,
+    "distanceMeters": 56444,
+    "averagePower": 168,
+    "normalizedPower": 168,
+    "tss": 122.9,
+    "intensityFactor": 0.672,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16814380166",
+    "stravaId": 16814380166,
+    "date": "2025-12-22",
+    "type": "Swim",
+    "durationSeconds": 4491,
+    "distanceMeters": 5000,
+    "averageHeartRate": 115.1,
+    "tss": 43.7,
+    "intensityFactor": 0.592,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16802646799",
+    "stravaId": 16802646799,
+    "date": "2025-12-21",
+    "type": "TrailRun",
+    "durationSeconds": 6908,
+    "distanceMeters": 13190,
+    "averagePower": 203,
+    "averageHeartRate": 135.9,
+    "normalizedPower": 203,
+    "tss": 126.5,
+    "intensityFactor": 0.812,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16793686873",
+    "stravaId": 16793686873,
+    "date": "2025-12-20",
+    "type": "GravelRide",
+    "durationSeconds": 11410,
+    "distanceMeters": 68542,
+    "averagePower": 174,
+    "averageHeartRate": 160.4,
+    "normalizedPower": 174,
+    "tss": 153.5,
+    "intensityFactor": 0.696,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16790255353",
+    "stravaId": 16790255353,
+    "date": "2025-12-19",
+    "type": "Swim",
+    "durationSeconds": 2406,
+    "distanceMeters": 2575,
+    "averageHeartRate": 106,
+    "tss": 17.3,
+    "intensityFactor": 0.509,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16790255395",
+    "stravaId": 16790255395,
+    "date": "2025-12-17",
+    "type": "Run",
+    "durationSeconds": 2544,
+    "distanceMeters": 6629,
+    "averagePower": 210,
+    "averageHeartRate": 133.1,
+    "normalizedPower": 210,
+    "tss": 49.9,
+    "intensityFactor": 0.84,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16750794691",
+    "stravaId": 16750794691,
+    "date": "2025-12-15",
+    "type": "Run",
+    "durationSeconds": 4242,
+    "distanceMeters": 10806,
+    "averagePower": 216,
+    "averageHeartRate": 140.9,
+    "normalizedPower": 216,
+    "tss": 88,
+    "intensityFactor": 0.864,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16793686884",
+    "stravaId": 16793686884,
+    "date": "2025-12-14",
+    "type": "GravelRide",
+    "durationSeconds": 15634,
+    "distanceMeters": 88713,
+    "averagePower": 147,
+    "averageHeartRate": 123.8,
+    "normalizedPower": 147,
+    "tss": 150.1,
+    "intensityFactor": 0.588,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16735251417",
+    "stravaId": 16735251417,
+    "date": "2025-12-13",
+    "type": "Run",
+    "durationSeconds": 2113,
+    "distanceMeters": 7763,
+    "averagePower": 275,
+    "averageHeartRate": 162.5,
+    "normalizedPower": 275,
+    "tss": 71,
+    "intensityFactor": 1.1,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16735251371",
+    "stravaId": 16735251371,
+    "date": "2025-12-12",
+    "type": "Swim",
+    "durationSeconds": 1021,
+    "distanceMeters": 1000,
+    "averageHeartRate": 102.2,
+    "tss": 6.4,
+    "intensityFactor": 0.475,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16735251386",
+    "stravaId": 16735251386,
+    "date": "2025-12-10",
+    "type": "Swim",
+    "durationSeconds": 1768,
+    "distanceMeters": 1875,
+    "averageHeartRate": 103.5,
+    "tss": 11.6,
+    "intensityFactor": 0.486,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16683351243",
+    "stravaId": 16683351243,
+    "date": "2025-12-08",
+    "type": "GravelRide",
+    "durationSeconds": 10364,
+    "distanceMeters": 52873,
+    "averagePower": 133,
+    "averageHeartRate": 97.5,
+    "normalizedPower": 133,
+    "tss": 81.5,
+    "intensityFactor": 0.532,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16683345320",
+    "stravaId": 16683345320,
+    "date": "2025-12-07",
+    "type": "GravelRide",
+    "durationSeconds": 11125,
+    "distanceMeters": 68994,
+    "averagePower": 156,
+    "averageHeartRate": 123.6,
+    "normalizedPower": 156,
+    "tss": 120.3,
+    "intensityFactor": 0.624,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16735251540",
+    "stravaId": 16735251540,
+    "date": "2025-12-05",
+    "type": "Run",
+    "durationSeconds": 2726,
+    "distanceMeters": 8584,
+    "averagePower": 237,
+    "averageHeartRate": 154.5,
+    "normalizedPower": 237,
+    "tss": 68.1,
+    "intensityFactor": 0.948,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16735251537",
+    "stravaId": 16735251537,
+    "date": "2025-12-04",
+    "type": "Run",
+    "durationSeconds": 2999,
+    "distanceMeters": 9329,
+    "averagePower": 234,
+    "averageHeartRate": 149.6,
+    "normalizedPower": 234,
+    "tss": 73,
+    "intensityFactor": 0.936,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16735251535",
+    "stravaId": 16735251535,
+    "date": "2025-11-30",
+    "type": "Run",
+    "durationSeconds": 2471,
+    "distanceMeters": 4573,
+    "averagePower": 218,
+    "averageHeartRate": 137.4,
+    "normalizedPower": 218,
+    "tss": 52.2,
+    "intensityFactor": 0.872,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16609451885",
+    "stravaId": 16609451885,
+    "date": "2025-11-30",
+    "type": "GravelRide",
+    "durationSeconds": 7826,
+    "distanceMeters": 44709,
+    "averagePower": 147,
+    "averageHeartRate": 108.8,
+    "normalizedPower": 147,
+    "tss": 75.2,
+    "intensityFactor": 0.588,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16735251544",
+    "stravaId": 16735251544,
+    "date": "2025-11-29",
+    "type": "GravelRide",
+    "durationSeconds": 3582,
+    "distanceMeters": 22836,
+    "averageHeartRate": 128.4,
+    "tss": 50.5,
+    "intensityFactor": 0.713,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16735251367",
+    "stravaId": 16735251367,
+    "date": "2025-11-26",
+    "type": "Swim",
+    "durationSeconds": 2296,
+    "distanceMeters": 2275,
+    "averageHeartRate": 107.7,
+    "tss": 17.5,
+    "intensityFactor": 0.525,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16566687555",
+    "stravaId": 16566687555,
+    "date": "2025-11-25",
+    "type": "Run",
+    "durationSeconds": 5025,
+    "distanceMeters": 14871,
+    "averagePower": 223,
+    "averageHeartRate": 144.9,
+    "normalizedPower": 223,
+    "tss": 111.1,
+    "intensityFactor": 0.892,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16566687512",
+    "stravaId": 16566687512,
+    "date": "2025-11-24",
+    "type": "Swim",
+    "durationSeconds": 2660,
+    "distanceMeters": 2800,
+    "averageHeartRate": 100.1,
+    "tss": 15.3,
+    "intensityFactor": 0.455,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16543912763",
+    "stravaId": 16543912763,
+    "date": "2025-11-23",
+    "type": "Run",
+    "durationSeconds": 2928,
+    "distanceMeters": 9598,
+    "averagePower": 220,
+    "averageHeartRate": 146,
+    "normalizedPower": 220,
+    "tss": 63,
+    "intensityFactor": 0.88,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16533061734",
+    "stravaId": 16533061734,
+    "date": "2025-11-22",
+    "type": "GravelRide",
+    "durationSeconds": 10160,
+    "distanceMeters": 61107,
+    "averagePower": 145,
+    "normalizedPower": 145,
+    "tss": 94.9,
+    "intensityFactor": 0.58,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16543912698",
+    "stravaId": 16543912698,
+    "date": "2025-11-21",
+    "type": "Swim",
+    "durationSeconds": 1204,
+    "distanceMeters": 1175,
+    "averageHeartRate": 110.9,
+    "tss": 10.3,
+    "intensityFactor": 0.554,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16508935608",
+    "stravaId": 16508935608,
+    "date": "2025-11-19",
+    "type": "Swim",
+    "durationSeconds": 813,
+    "distanceMeters": 850,
+    "averageHeartRate": 117.6,
+    "tss": 8.5,
+    "intensityFactor": 0.615,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16498281022",
+    "stravaId": 16498281022,
+    "date": "2025-11-18",
+    "type": "TrailRun",
+    "durationSeconds": 3567,
+    "distanceMeters": 7361,
+    "averagePower": 208,
+    "averageHeartRate": 129.2,
+    "normalizedPower": 208,
+    "tss": 68.6,
+    "intensityFactor": 0.832,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16475824197",
+    "stravaId": 16475824197,
+    "date": "2025-11-16",
+    "type": "Run",
+    "durationSeconds": 3685,
+    "distanceMeters": 12011,
+    "averagePower": 246,
+    "averageHeartRate": 150,
+    "normalizedPower": 246,
+    "tss": 99.1,
+    "intensityFactor": 0.984,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16475823940",
+    "stravaId": 16475823940,
+    "date": "2025-11-16",
+    "type": "Run",
+    "durationSeconds": 87,
+    "distanceMeters": 116,
+    "averagePower": 83,
+    "averageHeartRate": 69,
+    "normalizedPower": 83,
+    "tss": 0.3,
+    "intensityFactor": 0.332,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16533055905",
+    "stravaId": 16533055905,
+    "date": "2025-11-15",
+    "type": "GravelRide",
+    "durationSeconds": 216,
+    "distanceMeters": 1190,
+    "averagePower": 103,
+    "averageHeartRate": 126.7,
+    "normalizedPower": 103,
+    "tss": 1,
+    "intensityFactor": 0.412,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16457458872",
+    "stravaId": 16457458872,
+    "date": "2025-11-14",
+    "type": "Run",
+    "durationSeconds": 3581,
+    "distanceMeters": 8634,
+    "averagePower": 234,
+    "averageHeartRate": 140.8,
+    "normalizedPower": 234,
+    "tss": 87.1,
+    "intensityFactor": 0.936,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16437689243",
+    "stravaId": 16437689243,
+    "date": "2025-11-12",
+    "type": "Run",
+    "durationSeconds": 3389,
+    "distanceMeters": 10228,
+    "averagePower": 229,
+    "averageHeartRate": 148.9,
+    "normalizedPower": 229,
+    "tss": 79,
+    "intensityFactor": 0.916,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16427809656",
+    "stravaId": 16427809656,
+    "date": "2025-11-11",
+    "type": "TrailRun",
+    "durationSeconds": 5029,
+    "distanceMeters": 10528,
+    "averagePower": 201,
+    "averageHeartRate": 147.9,
+    "normalizedPower": 201,
+    "tss": 90.3,
+    "intensityFactor": 0.804,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16427809525",
+    "stravaId": 16427809525,
+    "date": "2025-11-10",
+    "type": "Swim",
+    "durationSeconds": 2534,
+    "distanceMeters": 2600,
+    "averageHeartRate": 98,
+    "tss": 13.4,
+    "intensityFactor": 0.436,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16408550498",
+    "stravaId": 16408550498,
+    "date": "2025-11-09",
+    "type": "GravelRide",
+    "durationSeconds": 9384,
+    "distanceMeters": 56431,
+    "averagePower": 154,
+    "normalizedPower": 154,
+    "tss": 98.9,
+    "intensityFactor": 0.616,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16411236049",
+    "stravaId": 16411236049,
+    "date": "2025-11-07",
+    "type": "Swim",
+    "durationSeconds": 1643,
+    "distanceMeters": 1650,
+    "averageHeartRate": 99.9,
+    "tss": 9.4,
+    "intensityFactor": 0.454,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16411236089",
+    "stravaId": 16411236089,
+    "date": "2025-11-04",
+    "type": "TrailRun",
+    "durationSeconds": 4610,
+    "distanceMeters": 9937,
+    "averagePower": 194,
+    "averageHeartRate": 145.7,
+    "normalizedPower": 194,
+    "tss": 77.1,
+    "intensityFactor": 0.776,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16411236045",
+    "stravaId": 16411236045,
+    "date": "2025-11-03",
+    "type": "Swim",
+    "durationSeconds": 1783,
+    "distanceMeters": 1800,
+    "averageHeartRate": 94.3,
+    "tss": 8,
+    "intensityFactor": 0.403,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16411236084",
+    "stravaId": 16411236084,
+    "date": "2025-11-01",
+    "type": "Run",
+    "durationSeconds": 2917,
+    "distanceMeters": 10032,
+    "averagePower": 262,
+    "averageHeartRate": 160.4,
+    "normalizedPower": 262,
+    "tss": 89,
+    "intensityFactor": 1.048,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16411236090",
+    "stravaId": 16411236090,
+    "date": "2025-10-28",
+    "type": "Run",
+    "durationSeconds": 3442,
+    "distanceMeters": 10274,
+    "averagePower": 224,
+    "averageHeartRate": 145.2,
+    "normalizedPower": 224,
+    "tss": 76.8,
+    "intensityFactor": 0.896,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16411236095",
+    "stravaId": 16411236095,
+    "date": "2025-10-27",
+    "type": "Run",
+    "durationSeconds": 3875,
+    "distanceMeters": 9900,
+    "averagePower": 201,
+    "averageHeartRate": 133.4,
+    "normalizedPower": 201,
+    "tss": 69.6,
+    "intensityFactor": 0.804,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16408550405",
+    "stravaId": 16408550405,
+    "date": "2025-10-26",
+    "type": "GravelRide",
+    "durationSeconds": 6220,
+    "distanceMeters": 36062,
+    "averagePower": 151,
+    "averageHeartRate": 132.8,
+    "normalizedPower": 151,
+    "tss": 63,
+    "intensityFactor": 0.604,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16408550258",
+    "stravaId": 16408550258,
+    "date": "2025-10-26",
+    "type": "GravelRide",
+    "durationSeconds": 921,
+    "distanceMeters": 5860,
+    "averagePower": 129,
+    "normalizedPower": 129,
+    "tss": 6.8,
+    "intensityFactor": 0.516,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16257570310",
+    "stravaId": 16257570310,
+    "date": "2025-10-25",
+    "type": "Run",
+    "durationSeconds": 2328,
+    "distanceMeters": 329,
+    "averagePower": 54,
+    "averageHeartRate": 78.2,
+    "normalizedPower": 54,
+    "tss": 3,
+    "intensityFactor": 0.216,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16257570350",
+    "stravaId": 16257570350,
+    "date": "2025-10-25",
+    "type": "Run",
+    "durationSeconds": 2714,
+    "distanceMeters": 8257,
+    "averagePower": 217,
+    "averageHeartRate": 143.3,
+    "normalizedPower": 217,
+    "tss": 56.8,
+    "intensityFactor": 0.868,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16257570327",
+    "stravaId": 16257570327,
+    "date": "2025-10-22",
+    "type": "Swim",
+    "durationSeconds": 1523,
+    "distanceMeters": 1500,
+    "averageHeartRate": 63,
+    "tss": 0.6,
+    "intensityFactor": 0.118,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16215745769",
+    "stravaId": 16215745769,
+    "date": "2025-10-21",
+    "type": "Run",
+    "durationSeconds": 3333,
+    "distanceMeters": 9557,
+    "averagePower": 212,
+    "averageHeartRate": 138.9,
+    "normalizedPower": 212,
+    "tss": 66.6,
+    "intensityFactor": 0.848,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16215745626",
+    "stravaId": 16215745626,
+    "date": "2025-10-20",
+    "type": "Swim",
+    "durationSeconds": 2031,
+    "distanceMeters": 2150,
+    "averageHeartRate": 106,
+    "tss": 14.6,
+    "intensityFactor": 0.509,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16215745717",
+    "stravaId": 16215745717,
+    "date": "2025-10-19",
+    "type": "Run",
+    "durationSeconds": 3217,
+    "distanceMeters": 10230,
+    "averagePower": 243,
+    "averageHeartRate": 151.4,
+    "normalizedPower": 243,
+    "tss": 84.4,
+    "intensityFactor": 0.972,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16204189161",
+    "stravaId": 16204189161,
+    "date": "2025-10-18",
+    "type": "GravelRide",
+    "durationSeconds": 16969,
+    "distanceMeters": 101091,
+    "averagePower": 164,
+    "averageHeartRate": 130.6,
+    "normalizedPower": 164,
+    "tss": 202.8,
+    "intensityFactor": 0.656,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16172132997",
+    "stravaId": 16172132997,
+    "date": "2025-10-17",
+    "type": "GravelRide",
+    "durationSeconds": 5807,
+    "distanceMeters": 35567,
+    "averagePower": 150,
+    "normalizedPower": 150,
+    "tss": 58.1,
+    "intensityFactor": 0.6,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16172121774",
+    "stravaId": 16172121774,
+    "date": "2025-10-14",
+    "type": "Ride",
+    "durationSeconds": 5591,
+    "distanceMeters": 41613,
+    "tss": 65.6,
+    "intensityFactor": 0.65,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16215745677",
+    "stravaId": 16215745677,
+    "date": "2025-10-13",
+    "type": "Swim",
+    "durationSeconds": 2556,
+    "distanceMeters": 2600,
+    "averageHeartRate": 106.2,
+    "tss": 18.5,
+    "intensityFactor": 0.511,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16172122174",
+    "stravaId": 16172122174,
+    "date": "2025-10-12",
+    "type": "GravelRide",
+    "durationSeconds": 12691,
+    "distanceMeters": 70242,
+    "averagePower": 155,
+    "averageHeartRate": 128.2,
+    "normalizedPower": 155,
+    "tss": 135.5,
+    "intensityFactor": 0.62,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16215747589",
+    "stravaId": 16215747589,
+    "date": "2025-10-11",
+    "type": "Run",
+    "durationSeconds": 5758,
+    "distanceMeters": 17655,
+    "averagePower": 236,
+    "averageHeartRate": 149.4,
+    "normalizedPower": 236,
+    "tss": 142.5,
+    "intensityFactor": 0.944,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16215745794",
+    "stravaId": 16215745794,
+    "date": "2025-10-08",
+    "type": "Ride",
+    "durationSeconds": 5628,
+    "distanceMeters": 33364,
+    "averageHeartRate": 131,
+    "tss": 84.8,
+    "intensityFactor": 0.736,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-17213360085",
+    "stravaId": 17213360085,
+    "date": "2025-10-06",
+    "type": "Swim",
+    "durationSeconds": 2079,
+    "distanceMeters": 1950,
+    "tss": 24.4,
+    "intensityFactor": 0.65,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16215745644",
+    "stravaId": 16215745644,
+    "date": "2025-10-05",
+    "type": "Run",
+    "durationSeconds": 181,
+    "distanceMeters": 444,
+    "averagePower": 245,
+    "averageHeartRate": 143.8,
+    "normalizedPower": 245,
+    "tss": 4.8,
+    "intensityFactor": 0.98,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16215745643",
+    "stravaId": 16215745643,
+    "date": "2025-10-05",
+    "type": "Run",
+    "durationSeconds": 182,
+    "distanceMeters": 597,
+    "averagePower": 208,
+    "averageHeartRate": 113.1,
+    "normalizedPower": 208,
+    "tss": 3.5,
+    "intensityFactor": 0.832,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16029588069",
+    "stravaId": 16029588069,
+    "date": "2025-10-04",
+    "type": "VirtualRide",
+    "durationSeconds": 16209,
+    "distanceMeters": 88895,
+    "averagePower": 158,
+    "averageHeartRate": 140.8,
+    "normalizedPower": 158,
+    "tss": 179.8,
+    "intensityFactor": 0.632,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16026790962",
+    "stravaId": 16026790962,
+    "date": "2025-10-03",
+    "type": "Ride",
+    "durationSeconds": 8236,
+    "distanceMeters": 46814,
+    "averagePower": 148,
+    "normalizedPower": 148,
+    "tss": 80.2,
+    "intensityFactor": 0.592,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16215745632",
+    "stravaId": 16215745632,
+    "date": "2025-10-01",
+    "type": "Swim",
+    "durationSeconds": 2188,
+    "distanceMeters": 2300,
+    "averageHeartRate": 100.8,
+    "tss": 13,
+    "intensityFactor": 0.462,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16215747568",
+    "stravaId": 16215747568,
+    "date": "2025-09-30",
+    "type": "Run",
+    "durationSeconds": 2513,
+    "distanceMeters": 8003,
+    "averagePower": 274,
+    "averageHeartRate": 134.8,
+    "normalizedPower": 274,
+    "tss": 83.9,
+    "intensityFactor": 1.096,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-16215745652",
+    "stravaId": 16215745652,
+    "date": "2025-09-29",
+    "type": "Swim",
+    "durationSeconds": 2110,
+    "distanceMeters": 2300,
+    "averageHeartRate": 101.5,
+    "tss": 12.8,
+    "intensityFactor": 0.468,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-15964741461",
+    "stravaId": 15964741461,
+    "date": "2025-09-27",
+    "type": "VirtualRide",
+    "durationSeconds": 21124,
+    "distanceMeters": 117852,
+    "averagePower": 143,
+    "averageHeartRate": 131.2,
+    "normalizedPower": 143,
+    "tss": 192,
+    "intensityFactor": 0.572,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-15950339201",
+    "stravaId": 15950339201,
+    "date": "2025-09-26",
+    "type": "Ride",
+    "durationSeconds": 2,
+    "distanceMeters": 0,
+    "averageHeartRate": 0,
+    "tss": 0,
+    "intensityFactor": 0.65,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-15950339641",
+    "stravaId": 15950339641,
+    "date": "2025-09-26",
+    "type": "Ride",
+    "durationSeconds": 8087,
+    "distanceMeters": 48687,
+    "averagePower": 154,
+    "averageHeartRate": 137.5,
+    "normalizedPower": 154,
+    "tss": 85.2,
+    "intensityFactor": 0.616,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-15956602336",
+    "stravaId": 15956602336,
+    "date": "2025-09-24",
+    "type": "Swim",
+    "durationSeconds": 2299,
+    "distanceMeters": 2300,
+    "averageHeartRate": 98.2,
+    "tss": 12.3,
+    "intensityFactor": 0.438,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-15956602425",
+    "stravaId": 15956602425,
+    "date": "2025-09-23",
+    "type": "GravelRide",
+    "durationSeconds": 7462,
+    "distanceMeters": 44695,
+    "averageHeartRate": 132,
+    "tss": 115.2,
+    "intensityFactor": 0.745,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-15956602333",
+    "stravaId": 15956602333,
+    "date": "2025-09-22",
+    "type": "Swim",
+    "durationSeconds": 2240,
+    "distanceMeters": 2400,
+    "averageHeartRate": 98.9,
+    "tss": 12.3,
+    "intensityFactor": 0.445,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-15886333544",
+    "stravaId": 15886333544,
+    "date": "2025-09-21",
+    "type": "Run",
+    "durationSeconds": 4066,
+    "distanceMeters": 10754,
+    "averagePower": 209,
+    "averageHeartRate": 135.6,
+    "normalizedPower": 209,
+    "tss": 78.9,
+    "intensityFactor": 0.836,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-15912555604",
+    "stravaId": 15912555604,
+    "date": "2025-09-20",
+    "type": "Ride",
+    "durationSeconds": 13013,
+    "distanceMeters": 72530,
+    "averagePower": 154,
+    "normalizedPower": 154,
+    "tss": 137.2,
+    "intensityFactor": 0.616,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-15912547158",
+    "stravaId": 15912547158,
+    "date": "2025-09-19",
+    "type": "Ride",
+    "durationSeconds": 9111,
+    "distanceMeters": 49324,
+    "averagePower": 150,
+    "normalizedPower": 150,
+    "tss": 91.1,
+    "intensityFactor": 0.6,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-15912547172",
+    "stravaId": 15912547172,
+    "date": "2025-09-16",
+    "type": "Ride",
+    "durationSeconds": 8660,
+    "distanceMeters": 51944,
+    "averagePower": 158,
+    "averageHeartRate": 137.5,
+    "normalizedPower": 158,
+    "tss": 96.1,
+    "intensityFactor": 0.632,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-15886333378",
+    "stravaId": 15886333378,
+    "date": "2025-09-15",
+    "type": "Swim",
+    "durationSeconds": 1263,
+    "distanceMeters": 1350,
+    "averageHeartRate": 93.5,
+    "tss": 5.5,
+    "intensityFactor": 0.395,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-15813071267",
+    "stravaId": 15813071267,
+    "date": "2025-09-14",
+    "type": "Ride",
+    "durationSeconds": 15486,
+    "distanceMeters": 90064,
+    "averagePower": 162,
+    "averageHeartRate": 136.4,
+    "normalizedPower": 162,
+    "tss": 180.6,
+    "intensityFactor": 0.648,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-15796562594",
+    "stravaId": 15796562594,
+    "date": "2025-09-13",
+    "type": "Ride",
+    "durationSeconds": 14516,
+    "distanceMeters": 103106,
+    "averageHeartRate": 122,
+    "tss": 172.8,
+    "intensityFactor": 0.655,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-15754275167",
+    "stravaId": 15754275167,
+    "date": "2025-09-09",
+    "type": "Ride",
+    "durationSeconds": 6368,
+    "distanceMeters": 42784,
+    "averagePower": 175,
+    "normalizedPower": 175,
+    "tss": 86.7,
+    "intensityFactor": 0.7,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-15886333425",
+    "stravaId": 15886333425,
+    "date": "2025-09-08",
+    "type": "Swim",
+    "durationSeconds": 1784,
+    "distanceMeters": 1800,
+    "averageHeartRate": 98.8,
+    "tss": 9.8,
+    "intensityFactor": 0.444,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-15886333448",
+    "stravaId": 15886333448,
+    "date": "2025-09-07",
+    "type": "Swim",
+    "durationSeconds": 1027,
+    "distanceMeters": 747,
+    "averageHeartRate": 115.6,
+    "tss": 10.1,
+    "intensityFactor": 0.596,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-15886333453",
+    "stravaId": 15886333453,
+    "date": "2025-09-07",
+    "type": "Run",
+    "durationSeconds": 1494,
+    "distanceMeters": 2602,
+    "averagePower": 160,
+    "averageHeartRate": 109.8,
+    "normalizedPower": 160,
+    "tss": 17,
+    "intensityFactor": 0.64,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-15685265930",
+    "stravaId": 15685265930,
+    "date": "2025-09-03",
+    "type": "Ride",
+    "durationSeconds": 12672,
+    "distanceMeters": 66202,
+    "averagePower": 148,
+    "normalizedPower": 148,
+    "tss": 123.4,
+    "intensityFactor": 0.592,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  },
+  {
+    "id": "strava-15663103043",
+    "stravaId": 15663103043,
+    "date": "2025-09-01",
+    "type": "Swim",
+    "durationSeconds": 2494,
+    "distanceMeters": 2600,
+    "averageHeartRate": 105.9,
+    "tss": 17.9,
+    "intensityFactor": 0.508,
+    "zones": {
+      "zone1Seconds": 0,
+      "zone2Seconds": 0,
+      "zone3Seconds": 0,
+      "zone4Seconds": 0,
+      "zone5Seconds": 0
+    }
+  }
+]

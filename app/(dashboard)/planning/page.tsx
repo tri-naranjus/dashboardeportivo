@@ -1,8 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { WeeklyPlan } from '@/types/planning';
+import { FitnessMetrics, ActivityData } from '@/types/fitness';
+import { computeFitnessMetrics } from '@/lib/fitness/ctl-atl';
 import { WeeklyPlanTable } from '@/components/planning/WeeklyPlanTable';
+import { SessionAdvisor } from '@/components/planning/SessionAdvisor';
+import { RestDaySelector } from '@/components/planning/RestDaySelector';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -13,6 +17,28 @@ export default function PlanningPage() {
   const [plan, setPlan] = useState<WeeklyPlan | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [metrics, setMetrics] = useState<FitnessMetrics | null>(null);
+  const [activities, setActivities] = useState<ActivityData[]>([]);
+  const [restDay, setRestDay] = useState('Sunday');
+
+  useEffect(() => {
+    async function loadMetricsAndActivities() {
+      try {
+        const res = await fetch('/api/strava/activities');
+        let acts: ActivityData[] = [];
+        if (res.ok) {
+          const data = await res.json();
+          acts = data.activities || [];
+        }
+        setActivities(acts);
+        setMetrics(computeFitnessMetrics(acts, 180));
+      } catch {
+        setActivities([]);
+        setMetrics(computeFitnessMetrics([], 180));
+      }
+    }
+    loadMetricsAndActivities();
+  }, []);
 
   async function handleGenerate() {
     if (!objective.trim()) {
@@ -27,7 +53,10 @@ export default function PlanningPage() {
       const res = await fetch('/api/plan/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ weekObjective: objective }),
+        body: JSON.stringify({
+          weekObjective: objective,
+          restDayOfWeek: restDay,
+        }),
       });
 
       if (!res.ok) throw new Error('Error generando plan');
@@ -46,10 +75,20 @@ export default function PlanningPage() {
       <div>
         <h1 className="text-3xl font-bold">Planificacion Semanal</h1>
         <p className="text-muted-foreground">
-          Define tu objetivo y genera un plan personalizado basado en tu estado
-          de forma
+          Define tu objetivo y elige tu día de descanso. Luego edita cualquier
+          día para adaptarlo.
         </p>
       </div>
+
+      {/* Rest day selector */}
+      {metrics && (
+        <RestDaySelector
+          activities={activities}
+          metrics={metrics}
+          selectedRestDay={restDay}
+          onRestDayChange={setRestDay}
+        />
+      )}
 
       {/* Generator form */}
       <Card>
@@ -62,7 +101,7 @@ export default function PlanningPage() {
               <Label htmlFor="objective">Objetivo de la semana</Label>
               <Input
                 id="objective"
-                placeholder="Ej: Preparar maraton de Valencia, mejorar base aerobica, perder peso..."
+                placeholder="Ej: Preparar 10K, base aerobica, trail largo, perder grasa..."
                 value={objective}
                 onChange={(e) => setObjective(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleGenerate()}
@@ -81,10 +120,11 @@ export default function PlanningPage() {
       {/* Quick objective buttons */}
       <div className="flex flex-wrap gap-2">
         {[
-          'Base aerobica y Zona 2',
-          'Preparacion maraton',
+          'Preparar 10K con series',
+          'Base aerobica Zona 2',
+          'Trail y montana',
+          'Ciclismo potencia',
           'Perder grasa manteniendo musculo',
-          'Ganar potencia en subida',
           'Recuperacion activa',
         ].map((obj) => (
           <Button
@@ -100,18 +140,31 @@ export default function PlanningPage() {
         ))}
       </div>
 
-      {/* Weekly plan table */}
+      {/* Weekly plan table (editable) */}
       {plan && (
         <Card>
           <CardHeader>
-            <CardTitle>
-              Plan Semanal: {plan.weekObjective}
-            </CardTitle>
+            <div className="flex items-center justify-between">
+              <CardTitle>Plan Semanal: {plan.weekObjective}</CardTitle>
+              <p className="text-xs text-muted-foreground">
+                Haz click en el lapiz para editar cada dia
+              </p>
+            </div>
           </CardHeader>
           <CardContent>
-            <WeeklyPlanTable plan={plan} />
+            <WeeklyPlanTable
+              plan={plan}
+              onPlanChange={setPlan}
+              weight={65}
+              tdee={2200}
+            />
           </CardContent>
         </Card>
+      )}
+
+      {/* Session Advisor */}
+      {metrics && (
+        <SessionAdvisor metrics={metrics} weight={65} tdee={2200} />
       )}
     </div>
   );
