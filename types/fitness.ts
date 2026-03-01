@@ -3,7 +3,7 @@ export interface UserProfile {
   lthr: number; // Lactate Threshold Heart Rate (bpm)
   maxHR: number;
   weight: number; // kg
-  sportFocus: 'running' | 'cycling' | 'both';
+  sports: string[]; // e.g. ['running', 'cycling', 'trail', 'swimming', 'strength']
   name: string;
   tdee: number; // Total Daily Energy Expenditure (kcal)
 }

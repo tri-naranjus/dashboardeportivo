@@ -11,7 +11,7 @@ const DEFAULT_PROFILE: UserProfile = {
   lthr: 160,
   maxHR: 185,
   weight: 65,
-  sportFocus: 'both',
+  sports: ['running', 'cycling'],
   name: 'Athlete',
   tdee: 2200,
 };
@@ -28,7 +28,20 @@ export async function getUserProfile(): Promise<UserProfile> {
   try {
     await ensureDataDir();
     const data = await fs.readFile(PROFILE_FILE, 'utf-8');
-    return JSON.parse(data) as UserProfile;
+    const parsed = JSON.parse(data) as Record<string, unknown>;
+    // Migrate old sportFocus field to sports array
+    if (!parsed.sports && parsed.sportFocus) {
+      const migrateMap: Record<string, string[]> = {
+        running: ['running'],
+        cycling: ['cycling'],
+        both: ['running', 'cycling'],
+      };
+      parsed.sports = migrateMap[parsed.sportFocus as string] || ['running', 'cycling'];
+      delete parsed.sportFocus;
+    } else if (!parsed.sports) {
+      parsed.sports = ['running', 'cycling'];
+    }
+    return parsed as unknown as UserProfile;
   } catch {
     return DEFAULT_PROFILE;
   }

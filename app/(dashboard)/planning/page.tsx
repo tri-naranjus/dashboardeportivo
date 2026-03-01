@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { WeeklyPlan } from '@/types/planning';
-import { FitnessMetrics, ActivityData } from '@/types/fitness';
+import { FitnessMetrics, ActivityData, UserProfile } from '@/types/fitness';
 import { computeFitnessMetrics } from '@/lib/fitness/ctl-atl';
 import { WeeklyPlanTable } from '@/components/planning/WeeklyPlanTable';
 import { SessionAdvisor } from '@/components/planning/SessionAdvisor';
@@ -19,19 +19,71 @@ export default function PlanningPage() {
   const [error, setError] = useState('');
   const [metrics, setMetrics] = useState<FitnessMetrics | null>(null);
   const [activities, setActivities] = useState<ActivityData[]>([]);
+  const [profile, setProfile] = useState<UserProfile | null>(null);
   const [restDay, setRestDay] = useState('Sunday');
+
+  // Auto-regenerate when rest day changes (if a plan is already showing)
+  useEffect(() => {
+    if (!plan || !objective.trim()) return;
+    setLoading(true);
+    setError('');
+    fetch('/api/plan/generate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ weekObjective: objective, restDayOfWeek: restDay }),
+    })
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then((data) => setPlan(data))
+      .catch(() => setError('Error al actualizar el plan.'))
+      .finally(() => setLoading(false));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [restDay]);
 
   useEffect(() => {
     async function loadMetricsAndActivities() {
       try {
-        const res = await fetch('/api/strava/activities');
         let acts: ActivityData[] = [];
-        if (res.ok) {
-          const data = await res.json();
-          acts = data.activities || [];
+
+        // Priority 1: Intervals.icu (same as dashboard)
+        try {
+          const statusRes = await fetch('/api/intervals/status');
+          if (statusRes.ok) {
+            const status = await statusRes.json();
+            if (status.connected) {
+              const intervalsRes = await fetch('/api/intervals/activities');
+              if (intervalsRes.ok) {
+                const data = await intervalsRes.json();
+                acts = data.activities || [];
+              }
+            }
+          }
+        } catch {
+          // Intervals.icu not available
         }
+
+        // Priority 2: Fallback to Strava
+        if (acts.length === 0) {
+          try {
+            const stravaRes = await fetch('/api/strava/activities');
+            if (stravaRes.ok) {
+              const data = await stravaRes.json();
+              acts = data.activities || [];
+            }
+          } catch {
+            // Strava not available
+          }
+        }
+
         setActivities(acts);
         setMetrics(computeFitnessMetrics(acts, 180));
+
+        // Load user profile for weight/tdee
+        try {
+          const profileRes = await fetch('/api/profile');
+          if (profileRes.ok) setProfile(await profileRes.json());
+        } catch {
+          // Use defaults
+        }
       } catch {
         setActivities([]);
         setMetrics(computeFitnessMetrics([], 180));
@@ -155,8 +207,8 @@ export default function PlanningPage() {
             <WeeklyPlanTable
               plan={plan}
               onPlanChange={setPlan}
-              weight={65}
-              tdee={2200}
+              weight={profile?.weight ?? 65}
+              tdee={profile?.tdee ?? 2200}
             />
           </CardContent>
         </Card>
@@ -164,7 +216,7 @@ export default function PlanningPage() {
 
       {/* Session Advisor */}
       {metrics && (
-        <SessionAdvisor metrics={metrics} weight={65} tdee={2200} />
+        <SessionAdvisor metrics={metrics} weight={profile?.weight ?? 65} tdee={profile?.tdee ?? 2200} />
       )}
     </div>
   );

@@ -11,6 +11,7 @@ export function getNutritionForSession(
   tdee: number
 ): DayNutritionPlan {
   const dayOfWeek = '';
+  const w = Math.round(weight);
 
   switch (sessionType) {
     case 'Intervals':
@@ -21,14 +22,13 @@ export function getNutritionForSession(
       return {
         dayOfWeek,
         choStrategy: 'Train High',
-        preworkoutCHO: '1-2g/kg CHO 2-3h antes (ejemplo: 65-130g para 65kg)',
+        preworkoutCHO: `1-2g/kg CHO 2-3h antes (${w}-${Math.round(2 * weight)}g para ${w}kg)`,
         duringCHO:
           durationMinutes > 90
             ? '60-90g CHO/hr (glucosa:fructosa 2:1)'
             : '30-45g CHO/hr si <90 min',
-        postworkoutCHO:
-          '1.2g/kg glucosa en los primeros 30 min (77g para 65kg)',
-        dailyProtein: '2.0g/kg (130g para 65kg)',
+        postworkoutCHO: `1.2g/kg glucosa en los primeros 30 min (${Math.round(1.2 * weight)}g para ${w}kg)`,
+        dailyProtein: `2.0g/kg (${Math.round(2.0 * weight)}g para ${w}kg)`,
         dailyCalories: `TDEE + 300-500 kcal (${tdee + 300}-${tdee + 500})`,
         hydration: '500-750ml/hr según sudoración',
         scientificBasis:
@@ -46,9 +46,8 @@ export function getNutritionForSession(
           durationMinutes > 90
             ? '20-40g CHO/hr si >90min (principalmente electrolitos)'
             : 'Solo agua y electrolitos',
-        postworkoutCHO:
-          '0.5g/kg CHO (32g para 65kg) + proteína para iniciar recuperación',
-        dailyProtein: '1.6-1.8g/kg (104-117g para 65kg)',
+        postworkoutCHO: `0.5g/kg CHO (${Math.round(0.5 * weight)}g para ${w}kg) + proteína para iniciar recuperación`,
+        dailyProtein: `1.6-1.8g/kg (${Math.round(1.6 * weight)}-${Math.round(1.8 * weight)}g para ${w}kg)`,
         dailyCalories: `TDEE o ligeramente bajo (${tdee - 100}-${tdee})`,
         hydration: '400-600ml/hr según sudoración',
         scientificBasis:
@@ -60,12 +59,11 @@ export function getNutritionForSession(
       return {
         dayOfWeek,
         choStrategy: 'Race Protocol',
-        preworkoutCHO: '1.5g/kg CHO 2-3h antes (97g para 65kg)',
+        preworkoutCHO: `1.5g/kg CHO 2-3h antes (${Math.round(1.5 * weight)}g para ${w}kg)`,
         duringCHO:
           '60-90g CHO/hr (preferiblemente glucosa:fructosa 2:1 para GI alto)',
-        postworkoutCHO:
-          '1.2g/kg glucosa en los primeros 30 min (77g para 65kg)',
-        dailyProtein: '1.8g/kg (117g para 65kg)',
+        postworkoutCHO: `1.2g/kg glucosa en los primeros 30 min (${Math.round(1.2 * weight)}g para ${w}kg)`,
+        dailyProtein: `1.8g/kg (${Math.round(1.8 * weight)}g para ${w}kg)`,
         dailyCalories: `TDEE + 500-800 kcal (${tdee + 500}-${tdee + 800}) - alto gasto energético`,
         hydration: '600-800ml/hr con sodio (400-700mg)',
         scientificBasis:
@@ -77,11 +75,11 @@ export function getNutritionForSession(
       return {
         dayOfWeek,
         choStrategy: 'Train High',
-        preworkoutCHO: '0.5-1g/kg CHO 1-2h antes (32-65g para 65kg)',
+        preworkoutCHO: `0.5-1g/kg CHO 1-2h antes (${Math.round(0.5 * weight)}-${w}g para ${w}kg)`,
         duringCHO: 'Solo agua',
         postworkoutCHO:
-          '0.5-0.7g/kg CHO (32-45g) + proteína en los 30 min post',
-        dailyProtein: '2.2-2.5g/kg (143-162g para 65kg) - máximo para reparación',
+          `0.5-0.7g/kg CHO (${Math.round(0.5 * weight)}-${Math.round(0.7 * weight)}g) + proteína en los 30 min post`,
+        dailyProtein: `2.2-2.5g/kg (${Math.round(2.2 * weight)}-${Math.round(2.5 * weight)}g para ${w}kg) - máximo para reparación`,
         dailyCalories: `TDEE o +100-200 kcal para supercompensación anabólica (${tdee}-${tdee + 200})`,
         hydration: '400-600ml/hr + electrolitos',
         scientificBasis:
@@ -96,7 +94,7 @@ export function getNutritionForSession(
         preworkoutCHO: 'N/A',
         duringCHO: 'N/A',
         postworkoutCHO: 'N/A',
-        dailyProtein: '1.8-2.0g/kg (117-130g para 65kg)',
+        dailyProtein: `1.8-2.0g/kg (${Math.round(1.8 * weight)}-${Math.round(2.0 * weight)}g para ${w}kg)`,
         dailyCalories: `TDEE o -100-200 kcal si buscas pérdida de peso (${tdee - 200}-${tdee})`,
         hydration: '2-3L agua sin restricción',
         scientificBasis:
@@ -108,10 +106,10 @@ export function getNutritionForSession(
       return {
         dayOfWeek,
         choStrategy: 'Race Protocol',
-        preworkoutCHO: '1.5-2g/kg CHO 2-3h antes (97-130g para 65kg)',
+        preworkoutCHO: `1.5-2g/kg CHO 2-3h antes (${Math.round(1.5 * weight)}-${Math.round(2 * weight)}g para ${w}kg)`,
         duringCHO: '90g CHO/hr (60g glucosa + 30g fructosa)',
-        postworkoutCHO: '1.5g/kg glucosa en 30 min post (97g para 65kg)',
-        dailyProtein: '2.0g/kg (130g para 65kg)',
+        postworkoutCHO: `1.5g/kg glucosa en 30 min post (${Math.round(1.5 * weight)}g para ${w}kg)`,
+        dailyProtein: `2.0g/kg (${Math.round(2.0 * weight)}g para ${w}kg)`,
         dailyCalories: `TDEE + 600-1000 kcal según intensidad (${tdee + 600}-${tdee + 1000})`,
         hydration: '750-1000ml/hr con sodio (600-800mg)',
         scientificBasis:
@@ -123,10 +121,10 @@ export function getNutritionForSession(
       return {
         dayOfWeek,
         choStrategy: 'Train High',
-        preworkoutCHO: '1g/kg CHO 2h antes',
+        preworkoutCHO: `1g/kg CHO 2h antes (${w}g para ${w}kg)`,
         duringCHO: '60g CHO/hr',
-        postworkoutCHO: '1g/kg CHO en 30 min post',
-        dailyProtein: '1.8g/kg',
+        postworkoutCHO: `1g/kg CHO en 30 min post (${w}g para ${w}kg)`,
+        dailyProtein: `1.8g/kg (${Math.round(1.8 * weight)}g para ${w}kg)`,
         dailyCalories: `${tdee}`,
         hydration: '500-750ml/hr',
         scientificBasis: 'Valores por defecto',

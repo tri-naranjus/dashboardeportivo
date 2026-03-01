@@ -1,0 +1,15 @@
+{
+  "ftp": 210,
+  "lthr": 155,
+  "maxHR": 170,
+  "weight": 70,
+  "sports": [
+    "running",
+    "cycling",
+    "trail",
+    "strength",
+    "swimming"
+  ],
+  "name": "Fernando",
+  "tdee": 2200
+}

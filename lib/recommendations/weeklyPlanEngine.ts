@@ -434,6 +434,12 @@ function buildSportWeekTemplate(
     week[5] = { primary: find('trail', 'LongRide') };
   }
 
+  // Fill Sunday (index 6) with a default if no objective branch set it
+  // (all branches only set week[0-5] + week[3]=calisthenics)
+  if (!week[6]) {
+    week[6] = { primary: find('cycling', 'Zone2') };
+  }
+
   // Safety: if very fatigued (TSB < -10), downgrade everything to Zone2 or rest
   if (tsb < -10) {
     for (let i = 0; i < 7; i++) {

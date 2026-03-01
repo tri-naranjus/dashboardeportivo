@@ -9,6 +9,8 @@ import {
   BookOpen,
   Settings,
   Dumbbell,
+  Zap,
+  GitCompare,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -27,6 +29,16 @@ const navItems = [
     label: 'Strava',
     href: '/strava',
     icon: Activity,
+  },
+  {
+    label: 'Intervals.icu',
+    href: '/intervals',
+    icon: Zap,
+  },
+  {
+    label: 'Comparar',
+    href: '/compare',
+    icon: GitCompare,
   },
   {
     label: 'Conocimiento',

@@ -34,3 +34,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Sensitive data files - credentials and tokens
+data/strava-tokens.json
+data/intervals-icu-credentials.json
+
+# Large data cache files (regenerated automatically)
+data/activities.json
+data/knowledge-base.json

@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { FitnessMetrics, ActivityData } from '@/types/fitness';
+import { FitnessMetrics, ActivityData, UserProfile } from '@/types/fitness';
 import { computeFitnessMetrics } from '@/lib/fitness/ctl-atl';
 import { FitnessMetricsCard } from '@/components/dashboard/FitnessMetricsCard';
 import { TrainingStatusBadge } from '@/components/dashboard/TrainingStatusBadge';
@@ -15,18 +15,42 @@ import { Card, CardContent } from '@/components/ui/card';
 export default function DashboardPage() {
   const [metrics, setMetrics] = useState<FitnessMetrics | null>(null);
   const [activities, setActivities] = useState<ActivityData[]>([]);
+  const [profile, setProfile] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function loadData() {
       try {
-        // Try to fetch activities from API
-        const res = await fetch('/api/strava/activities');
         let fetchedActivities: ActivityData[] = [];
 
-        if (res.ok) {
-          const data = await res.json();
-          fetchedActivities = data.activities || [];
+        // Priority 1: Try Intervals.icu (more accurate TSS/IF)
+        try {
+          const intervalsStatus = await fetch('/api/intervals/status');
+          if (intervalsStatus.ok) {
+            const status = await intervalsStatus.json();
+            if (status.connected) {
+              const intervalsRes = await fetch('/api/intervals/activities');
+              if (intervalsRes.ok) {
+                const data = await intervalsRes.json();
+                fetchedActivities = data.activities || [];
+              }
+            }
+          }
+        } catch {
+          // Intervals.icu not available, try Strava
+        }
+
+        // Priority 2: Fallback to Strava if Intervals.icu has no data
+        if (fetchedActivities.length === 0) {
+          try {
+            const stravaRes = await fetch('/api/strava/activities');
+            if (stravaRes.ok) {
+              const data = await stravaRes.json();
+              fetchedActivities = data.activities || [];
+            }
+          } catch {
+            // Strava not available either
+          }
         }
 
         setActivities(fetchedActivities);
@@ -34,6 +58,14 @@ export default function DashboardPage() {
         // Compute fitness metrics over 180 days for full history
         const computed = computeFitnessMetrics(fetchedActivities, 180);
         setMetrics(computed);
+
+        // Load user profile for weight/tdee
+        try {
+          const profileRes = await fetch('/api/profile');
+          if (profileRes.ok) setProfile(await profileRes.json());
+        } catch {
+          // Use defaults if profile fetch fails
+        }
       } catch {
         // Default empty metrics
         setMetrics(computeFitnessMetrics([], 180));
@@ -84,7 +116,7 @@ export default function DashboardPage() {
       <FitnessMetricsCard ctl={ctl} atl={atl} tsb={tsb} />
 
       {/* Today's Recommendation - Full width prominent */}
-      <TodayRecommendation tsb={tsb} weight={65} tdee={2200} />
+      <TodayRecommendation tsb={tsb} weight={profile?.weight ?? 65} tdee={profile?.tdee ?? 2200} activities={activities} />
 
       {/* Charts Section */}
       <div className="space-y-6">

@@ -17,10 +17,14 @@ export async function POST(request: NextRequest) {
     }
 
     // Verify credentials work
-    const isValid = await verifyIntervalsIcuCredentials(apiKey, athleteId);
-    if (!isValid) {
+    const verification = await verifyIntervalsIcuCredentials(apiKey, athleteId);
+    if (!verification.valid) {
       return NextResponse.json(
-        { error: 'Invalid API key or athlete ID' },
+        {
+          error: 'Failed to authenticate with Intervals.icu',
+          details: verification.error,
+          hint: 'Check that your API Key is valid and has access to this athlete. Visit intervals.icu/settings/api to verify.'
+        },
         { status: 401 }
       );
     }

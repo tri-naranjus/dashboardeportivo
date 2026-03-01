@@ -6,13 +6,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
 import { Separator } from '@/components/ui/separator';
 import { Settings, Save, User } from 'lucide-react';
 import { IntervalsIcuConnect } from '@/components/settings/IntervalsIcuConnect';
@@ -22,10 +15,18 @@ const DEFAULT_PROFILE: UserProfile = {
   lthr: 160,
   maxHR: 185,
   weight: 65,
-  sportFocus: 'both',
+  sports: [],
   name: 'Athlete',
   tdee: 2200,
 };
+
+const SPORT_OPTIONS = [
+  { id: 'running', label: 'Running' },
+  { id: 'cycling', label: 'Ciclismo' },
+  { id: 'swimming', label: 'Natación' },
+  { id: 'trail', label: 'Trail' },
+  { id: 'strength', label: 'Fuerza/Calistenia' },
+];
 
 export default function SettingsPage() {
   const [profile, setProfile] = useState<UserProfile>(DEFAULT_PROFILE);
@@ -84,6 +85,16 @@ export default function SettingsPage() {
     setProfile((prev) => ({ ...prev, [field]: value }));
   }
 
+  function toggleSport(sportId: string) {
+    setProfile((prev) => {
+      const current = prev.sports || [];
+      const next = current.includes(sportId)
+        ? current.filter((s) => s !== sportId)
+        : [...current, sportId];
+      return { ...prev, sports: next };
+    });
+  }
+
   return (
     <div className="space-y-6">
       <div>
@@ -112,20 +123,26 @@ export default function SettingsPage() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="sport">Deporte Principal</Label>
-              <Select
-                value={profile.sportFocus}
-                onValueChange={(v) => updateProfile('sportFocus', v)}
-              >
-                <SelectTrigger>
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="running">Running</SelectItem>
-                  <SelectItem value="cycling">Ciclismo</SelectItem>
-                  <SelectItem value="both">Ambos</SelectItem>
-                </SelectContent>
-              </Select>
+              <Label>Deportes que practicas</Label>
+              <div className="flex flex-wrap gap-2 pt-1">
+                {SPORT_OPTIONS.map((sport) => {
+                  const active = (profile.sports || []).includes(sport.id);
+                  return (
+                    <button
+                      key={sport.id}
+                      type="button"
+                      onClick={() => toggleSport(sport.id)}
+                      className={`rounded-full border px-3 py-1 text-sm font-medium transition-colors ${
+                        active
+                          ? 'border-primary bg-primary text-white'
+                          : 'border-border bg-background text-muted-foreground hover:border-primary/50 hover:text-foreground'
+                      }`}
+                    >
+                      {sport.label}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </div>
 
