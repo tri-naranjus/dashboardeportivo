@@ -69,7 +69,7 @@ function ChartBody({ data, showTarget, targetTSS, height }: ChartBodyProps) {
           <YAxis className="text-xs" tick={{ fontSize: 11 }} />
           <Tooltip
             contentStyle={tooltipStyle}
-            formatter={(value: number) => [`${Math.round(value)} TSS`, 'Carga']}
+            formatter={(value: number | undefined) => [value != null ? `${Math.round(value)} TSS` : '–', 'Carga']}
           />
           {showTarget && (
             <ReferenceLine
