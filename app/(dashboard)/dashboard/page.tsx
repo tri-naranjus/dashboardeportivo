@@ -10,6 +10,7 @@ import { WeeklyLoadChart } from '@/components/dashboard/WeeklyLoadChart';
 import { CTLATLChart } from '@/components/dashboard/CTLATLChart';
 import { RecentWorkouts } from '@/components/dashboard/RecentWorkouts';
 import { Skeleton } from '@/components/ui/skeleton';
+import { Card, CardContent } from '@/components/ui/card';
 
 export default function DashboardPage() {
   const [metrics, setMetrics] = useState<FitnessMetrics | null>(null);
@@ -46,14 +47,14 @@ export default function DashboardPage() {
 
   if (loading) {
     return (
-      <div className="space-y-6">
-        <Skeleton className="h-10 w-48" />
+      <div className="space-y-8">
+        <Skeleton className="h-12 w-64 rounded-lg" />
         <div className="grid gap-4 sm:grid-cols-3">
-          <Skeleton className="h-32" />
-          <Skeleton className="h-32" />
-          <Skeleton className="h-32" />
+          <Skeleton className="h-40 rounded-xl" />
+          <Skeleton className="h-40 rounded-xl" />
+          <Skeleton className="h-40 rounded-xl" />
         </div>
-        <Skeleton className="h-64" />
+        <Skeleton className="h-80 rounded-xl" />
       </div>
     );
   }
@@ -63,32 +64,84 @@ export default function DashboardPage() {
   const atl = metrics?.atl ?? 0;
 
   return (
-    <div className="space-y-6">
-      {/* Header */}
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <h1 className="text-3xl font-bold">Dashboard</h1>
-          <p className="text-muted-foreground">
-            Resumen de tu estado de forma actual
-          </p>
+    <div className="space-y-8 pb-8">
+      {/* Header with gradient background */}
+      <div className="rounded-2xl bg-gradient-to-r from-primary/10 via-secondary/5 to-accent/10 border border-primary/10 p-8">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              Dashboard
+            </h1>
+            <p className="text-muted-foreground mt-2">
+              Tu estado de forma actual y recomendaciones personalizadas
+            </p>
+          </div>
+          <TrainingStatusBadge tsb={tsb} />
         </div>
-        <TrainingStatusBadge tsb={tsb} />
       </div>
 
-      {/* Fitness Metrics Cards */}
+      {/* Key Metrics */}
       <FitnessMetricsCard ctl={ctl} atl={atl} tsb={tsb} />
 
-      {/* Today's Recommendation */}
+      {/* Today's Recommendation - Full width prominent */}
       <TodayRecommendation tsb={tsb} weight={65} tdee={2200} />
 
-      {/* Recent Workouts */}
-      <RecentWorkouts activities={activities} />
-
-      {/* Charts */}
-      <div className="grid gap-4 lg:grid-cols-2">
-        <WeeklyLoadChart history={metrics?.history ?? []} />
-        <CTLATLChart history={metrics?.history ?? []} />
+      {/* Charts Section */}
+      <div className="space-y-6">
+        <h2 className="text-2xl font-bold">Análisis Histórico</h2>
+        <div className="grid gap-6 lg:grid-cols-2">
+          <WeeklyLoadChart history={metrics?.history ?? []} />
+          <CTLATLChart history={metrics?.history ?? []} />
+        </div>
       </div>
+
+      {/* Recent Workouts */}
+      <div className="space-y-6">
+        <h2 className="text-2xl font-bold">Entrenamientos Recientes</h2>
+        <RecentWorkouts activities={activities} />
+      </div>
+
+      {/* Quick Stats Footer */}
+      {activities.length > 0 && (
+        <Card className="bg-gradient-to-r from-primary/5 to-secondary/5 border-primary/10">
+          <CardContent className="pt-6">
+            <div className="grid gap-4 sm:grid-cols-4">
+              <div className="space-y-2">
+                <p className="text-sm text-muted-foreground font-medium">Entrenamientos</p>
+                <p className="text-3xl font-bold">{activities.length}</p>
+                <p className="text-xs text-muted-foreground">últimos 180 días</p>
+              </div>
+              <div className="space-y-2">
+                <p className="text-sm text-muted-foreground font-medium">TSS Total</p>
+                <p className="text-3xl font-bold">
+                  {Math.round(
+                    activities.reduce((sum, a) => sum + a.tss, 0)
+                  )}
+                </p>
+                <p className="text-xs text-muted-foreground">carga acumulada</p>
+              </div>
+              <div className="space-y-2">
+                <p className="text-sm text-muted-foreground font-medium">Promedio TSS</p>
+                <p className="text-3xl font-bold">
+                  {Math.round(
+                    activities.reduce((sum, a) => sum + a.tss, 0) / activities.length || 0
+                  )}
+                </p>
+                <p className="text-xs text-muted-foreground">por sesión</p>
+              </div>
+              <div className="space-y-2">
+                <p className="text-sm text-muted-foreground font-medium">Horas</p>
+                <p className="text-3xl font-bold">
+                  {Math.round(
+                    activities.reduce((sum, a) => sum + a.durationSeconds, 0) / 3600
+                  )}
+                </p>
+                <p className="text-xs text-muted-foreground">volumen total</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      )}
     </div>
   );
 }
