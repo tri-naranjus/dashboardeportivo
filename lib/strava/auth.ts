@@ -7,7 +7,10 @@ import { StravaTokens } from '@/types/strava';
  */
 export function getStravaAuthUrl(): string {
   const clientId = process.env.STRAVA_CLIENT_ID;
-  const redirectUri = `${process.env.NEXT_PUBLIC_APP_URL}/api/strava/callback`;
+  // STRAVA_REDIRECT_URI takes priority so local and production can differ independently
+  const redirectUri =
+    process.env.STRAVA_REDIRECT_URI ||
+    `${process.env.NEXT_PUBLIC_APP_URL}/api/strava/callback`;
   const scope = 'read,activity:read_all';
 
   const authUrl = new URL('https://www.strava.com/oauth/authorize');
